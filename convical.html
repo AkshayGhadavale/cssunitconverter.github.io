@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="a1">PX</label>
+    <input type="text" name="" placeholder="pixel" id="a1"value="0" onkeyup=" convipx()"/>
+    <label for="a2">em</label>
+    <input type="text" name=""placeholder="em" id="a2"value="0"onkeyup="conviem()">
+    <label for="a3">rem</label>
+    <input type="text" name="" placeholder="rem"id="a3" value="0"onkeyup="convirem()">
+    <!-- <label for="a4">mm</label>
+
+    <input type="text" name="" placeholder="mm"id="a4"  value="0"onkeyup="convimm()">
+    <label for="a5">cm</label>
+    <input type="text" name="" placeholder="cm"id="a5"onkeyup="convicm()"> -->
+    <label for="a6">inch</label>
+    <input type="text" name="" placeholder="inch"id="a6"onkeyup="conviin()">
+    <label for="a7">pc</label>
+    <input type="text" name="" placeholder="pc"id="a7"onkeyup="convipc()">
+    <label for="a8">pt</label>
+    <input type="text" name="" placeholder="pt"id="a8"onkeyup="convipt()">
+    <label for="a9">percentage</label>
+    <input type="text" name="" placeholder="percentage"id="a9"onkeyup="conviper()">
+    <label for="a10">RAdin</label>
+    <input type="text" name="" placeholder="Rad"id="a10"onkeyup="convirad()">
+    
+</body>
+<script>
+
+
+//for px to other
+
+function convipx() {  
+    if( document.getElementById("a1").value=="")
+    {
+        document.getElementById("a1").value='0';
+    }  
+    else{
+        
+    }   
+    let px= document.getElementById("a1").value 
+//     let emsum =parseInt(em)*parseInt(16);
+//  document.getElementById("a1").value = emsum;
+   And_This(px);
+  
+}  
+
+
+
+
+
+//for em to other
+
+function conviem() {    
+    if( document.getElementById("a2").value=="")
+    {
+        document.getElementById("a2").value='0';
+    }  
+    else{
+        
+    }
+    
+
+    let em= document.getElementById("a2").value 
+    let emsum =parseInt(em)*parseInt(16);
+ document.getElementById("a1").value = emsum;
+   And_This(emsum);
+}  
+
+
+
+//for rem to other
+
+function convirem() {   
+    if( document.getElementById("a3").value=="")
+    {
+        document.getElementById("a3").value='0';
+    }  
+    else{
+
+    }
+    let em= document.getElementById("a3").value 
+   
+    let emsum =parseInt(em)*parseInt(16);
+ document.getElementById("a1").value = emsum;
+   And_This(emsum);
+}  
+
+
+
+
+// //for mm to other
+
+// function convimm() {   
+//     if( document.getElementById("a4").value=="")
+//     {
+//         document.getElementById("a4").value='0';
+//     }  
+//     else{
+
+//     }
+//     let mm= document.getElementById("a4").value 
+//     let cm= mm/10
+   
+//     let emsum =parseInt(cm)*parseInt(37.795280352161);
+//  document.getElementById("a1").value = emsum;
+//    And_This(emsum);
+// }  
+
+
+
+
+//for cm to other
+
+// function convicm() {   
+//     if( document.getElementById("a5").value=="")
+//     {
+//         document.getElementById("a5").value='0';
+//     }  
+//     else{
+
+//     }
+//     let cm= document.getElementById("a5").value 
+   
+   
+//     let emsum =parseInt(cm)*parseInt(37.795280352161);
+//  document.getElementById("a1").value = emsum;
+//    And_This(emsum);
+// }  
+
+
+
+//for in to other
+
+function conviin() {   
+    if( document.getElementById("a6").value=="")
+    {
+        document.getElementById("a6").value='0';
+    }  
+    else{
+
+    }1
+
+    let inch= document.getElementById("a6").value 
+    let emsum =parseInt(inch)*parseInt(96);
+ document.getElementById("a1").value = emsum;
+   And_This(emsum);
+}  
+
+
+//for pc to other
+function convipc() {   
+    if( document.getElementById("a7").value=="")
+    {
+        document.getElementById("a7").value='0';
+    }  
+    else{
+    }
+
+
+    let pc= document.getElementById("a7").value
+   
+    let emsum =parseInt(pc)*parseInt(16);
+ document.getElementById("a1").value = emsum;
+   And_This(emsum);
+}  
+
+
+
+//for pt to other
+function convipt() {   
+    if( document.getElementById("a8").value=="" )
+    {
+        document.getElementById("a8").value="0";
+    }  
+    else{
+    }
+
+
+    let pt= document.getElementById("a8").value
+   
+    let emsum =parseFloat(pt)/parseFloat(96)*parseFloat(72);
+ document.getElementById("a1").value =emsum;
+   And_This(emsum);
+}  
+
+
+
+//for pt to other
+function convipt() {   
+    if( document.getElementById("a8").value=="" )
+    {
+        document.getElementById("a8").value="0";
+    }  
+    else{
+    }
+
+
+    let pt= document.getElementById("a8").value
+   
+    let emsum =parseFloat(pt)/parseFloat(96)*parseFloat(72);
+ document.getElementById("a1").value =emsum;
+   And_This(emsum);
+}  
+
+
+
+
+
+//for % to other
+function conviper() {   
+    if( document.getElementById("a9").value=="" )
+    {
+        document.getElementById("a9").value="0";
+    }  
+    else{
+    }
+
+
+    let per= document.getElementById("a9").value
+   
+    let emsum =parseFloat(per)*parseFloat(0.16);
+ document.getElementById("a1").value =emsum;
+   And_This(emsum);
+}  
+
+
+
+// //for rad to other
+// function conviper() {   
+//     if( document.getElementById("a10").value=="" )
+//     {
+//         document.getElementById("a10").value="0";
+//     }  
+//     else{
+//     }
+
+
+//     let per= document.getElementById("a10").value
+   
+//     let emsum =parseFloat(per)*parseFloat(0.16);
+//  document.getElementById("a1").value =emsum;
+//    And_This(emsum);
+// }  
+
+
+
+
+
+
+function And_This(num) {
+  let pixels=num;
+
+ 
+
+  let Pixelsum =parseInt(pixels)/parseInt(16);
+   document.getElementById("a2").value = Pixelsum;
+
+ let remsum =parseInt(pixels)/parseInt(16);
+ document.getElementById("a3").value = parseFloat(remsum);
+
+
+
+
+
+ let insum =parseFloat(pixels)*parseFloat(0.0104166666667);
+ document.getElementById("a6").value = parseInt(insum);
+
+let inch1=insum.toFixed(2);
+
+ let mmsum =parseFloat(inch1)* parseFloat(25.4); 
+//  document.getElementById("a4").value = mmsum.toFixed(2);
+
+ let cmsum =parseFloat(inch1)* parseFloat(2.54); 
+
+//  document.getElementById("a5").value = cmsum.toFixed(2);
+
+//  let centimeter=cmsum;
+ 
+ 
+ let pcsum =parseFloat(pixels)*parseFloat(0.0625);
+ document.getElementById("a7").value = parseFloat(pcsum);
+
+ let ptsum =parseFloat(pixels)*parseFloat(96)/parseFloat(72);
+ document.getElementById("a8").value =parseFloat(ptsum);
+
+ let pertisum =parseFloat(pixels)* parseFloat(6.25)
+ document.getElementById("a9").value = parseFloat(pertisum );
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function convipx(value){
+
+//     let Pixelsum =parseInt(pixels)/parseInt(16);
+//       document.getElementById("a2").value = Pixelsum;
+//       convi();
+
+
+// }
+
+
+
+
+
+
+
+
+       
+//     function sumpx(){
+   
+//         let pixels= document.getElementById("a1").value
+//       let em= document.getElementById("a2").value 
+//       let rem= document.getElementById("a3").value 
+//       let mm= document.getElementById("a4").value
+//       let cm= document.getElementById("a4").value
+//       let inch= document.getElementById("a4").value
+//       let pc= document.getElementById("a4").value
+//       let pt= document.getElementById("a4").value
+//       let percent= document.getElementById("a4").value
+      
+
+// /*pixel*/
+    
+//       let Pixelsum =parseInt(pixels)/parseInt(16);
+//       document.getElementById("a2").value = Pixelsum;
+
+
+
+//       let remsum =parseInt(pixels)/parseInt(16);
+//       document.getElementById("a3").value = remsum;
+
+//       let mmsum =parseInt(pixels)* parseInt(25.4)/parseInt(96); n
+//       document.getElementById("a4").value = mmsum;
+
+//       let cmsum =parseInt(pixels)* parseInt(2.54)/parseInt(96);
+//       let centimeter=cmsum;
+//       document.getElementById("a5").value = cmsum;
+
+//       let insum =parseInt(centimeter)/parseInt(2.54);
+//       document.getElementById("a6").value = insum;
+      
+
+//       let pcsum =parseInt(cmsum)*parseInt(3.2407792896664E-19);
+//       document.getElementById("a7").value = pcsum;
+      
+//       let ptsum =parseInt(pixels)* parseInt(72)/parseInt(96);
+//       document.getElementById("a8").value = ptsum;
+
+//       let pertisum =parseInt(pixels)* parseInt(6.25)
+//       document.getElementById("a9").value =  pertisum ;
+
+
+
+
+
+
+
+//     //     let Pixelsum =parseInt(em)*parseInt(16);
+//     //   document.getElementById("a1").value = Pixelsum;
+
+
+//     //   let remsum =parseInt(Pixelsum)/parseInt(16);
+//     //   document.getElementById("a3").value = remsum;
+
+
+
+ 
+
+// }
+    
+// function sumem(){
+   
+  
+//  let em= document.getElementById("a2").value 
+//  let rem= document.getElementById("a3").value 
+//  let mm= document.getElementById("a4").value
+//  let cm= document.getElementById("a4").value
+//  let inch= document.getElementById("a4").value
+//  let pc= document.getElementById("a4").value
+//  let pt= document.getElementById("a4").value
+//  let percent= document.getElementById("a4").value
+ 
+
+// /*pixel*/
+
+//  let emsum =parseInt(em)*parseInt(16);
+//  document.getElementById("a1").value = emsum;
+
+
+//  let pixels=emsum;
+
+//  let remsum =parseInt(pixels)/parseInt(16);
+//  document.getElementById("a3").value = remsum;
+
+//  let mmsum =parseInt(pixels)* parseInt(25.4)/parseInt(96); 
+//  document.getElementById("a4").value = mmsum;
+
+//  let cmsum =parseInt(pixels)* parseInt(2.54)/parseInt(96);
+//  let centimeter=cmsum;
+//  document.getElementById("a5").value = cmsum;
+
+//  let insum =parseInt(centimeter)/parseInt(2.54);
+//  document.getElementById("a6").value = insum;
+ 
+
+//  let pcsum =parseInt(cmsum)*parseInt(3.2407792896664E-19);
+//  document.getElementById("a7").value = pcsum;
+ 
+//  let ptsum =parseInt(pixels)* parseInt(72)/parseInt(96);
+//  document.getElementById("a8").value = ptsum;
+
+//  let pertisum =parseInt(pixels)* parseInt(6.25)
+//  document.getElementById("a9").value =  pertisum ;
+
+
+
+
+// }
+
+
+
+    
+
+</script>
+</html>
+
+
+<!-- 
+
+px to cm  =pixels * 2.54 / 96
+px to mm=( pixels * 25.4 ) / 96
+px to em=pixel/16
+px to rem=pixel/16
+px to  in=  cm/2.54
+px to  pc=cm* 3.2407792896664E-19
+px to pt=pixels * 72 / 96
+px to %=pixel*6.25
+px to 
+px to
+px to
+px to -->

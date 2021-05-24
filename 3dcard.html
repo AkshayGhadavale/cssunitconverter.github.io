@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<div>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .card{
+        position: relative;
+        display: flex;
+        align-items:center;justify-content: center;
+        width: 32rem;height: 20rem;
+        background:linear-gradient(60deg,#8E36D6,#D61F76);
+        top: 100px;
+        left: 300px;
+        transform: perspective(1000px);
+        transform: preserve-3d;
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.20),
+        0 15px 12px rgba(0,0,0,0.20);
+        transition: all 180ms ease-out;
+
+    }
+    .card h1{
+        color: #fff;
+        font-size: 2.2rem;
+        font-weight: 600;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-shadow: 0 0 22PX rgba(0,0,0,0.6);
+ transform: translateZ(40px);
+    }
+    .circle{
+        position:absolute;
+        top: 1rem;
+        right: 2rem;
+    }
+    .circle span{
+        display: inline-flex;
+        width:0.5rem;
+        height:0.5rem; 
+        margin: 0 0.1rem;
+        border-radius: 25px;
+        background: #ffffff;
+      /* box-shadow: 0 0 22px rgba(0,0,0,0.7);
+        transform: translateY(40px);  */
+    }
+
+
+</style>
+<body>
+    <div class="card">
+        <h1>HELLO</h1>
+    <div class="circle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    </div>
+
+    
+</body>
+<script>
+    const box=  document.querySelector('.card')
+const boxreact =box.getBoundingClientRect()
+
+
+
+box.addEventListener('mousemove',e=>{
+    
+    const xposition=(e.clientx-boxreact.left)/boxreact.width
+    const yposition=(e.clienty-boxreact.top)/boxreact.height-0.6
+    const xoffset=-(xposition-0.6)
+    const dxnorm= Math.min(Math.max(xoffset,-0.6),0.6)
+      box.style.transform=perspective(1000px)
+      
+      
+      
+
+
+})
+
+</script>
+</html>
