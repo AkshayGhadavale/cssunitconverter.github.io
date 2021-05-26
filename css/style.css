@@ -305,7 +305,11 @@ color: whitesmoke;
 .card .front-end{
   visibility: hidden;
 }
-  
+.footer{
+  width: 100%;
+  height: 30px;
+  background-color: greenyellow;
+}
 
 
 
@@ -319,6 +323,7 @@ color: whitesmoke;
 /*for mobile */
 @media only screen and (max-width: 600px) {
   
+
   .wrapper {
     width: 100%;
     height: 200vh;
@@ -563,6 +568,11 @@ transform: rotateY(180deg);
 visibility: hidden;
 }
 
+.footer{
+  width: 100%;
+  height: 20px;
+  background-color: greenyellow;
+}
 
 
 
