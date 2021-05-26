@@ -431,12 +431,11 @@ padding: 10px;
 border-radius: 10px;
 font-family: "Caveat Brush", cursive;
 font-size: 30px;
-position: fixed;
+
 }
 .pixelgp{
 margin-top:0px;
 padding: 20px;
-position: fixed;
 }
 
 
@@ -446,7 +445,6 @@ margin-left: 10px;
 color: #ffff;
 font-size: 20px;
 font-family: "Caveat Brush", cursive;
-position: fixed;
 /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    */
 }
@@ -458,7 +456,7 @@ background-color: black;
 display: flex;
 
 flex-direction: row-reverse;
-position: fixed;
+
 flex-wrap: wrap;
 justify-content: center;
 
@@ -473,7 +471,6 @@ border-bottom-left-radius: 90%;
 margin-left: 10px;
 width: 100px;
 padding: 10px;
-position: fixed;
 
 
 border-radius: 10px;
@@ -484,18 +481,14 @@ font-size: 15px;
 margin-top: 10px;
 margin-bottom: 0;
 margin-left: 0;
-position: fixed;
 
 margin-right: 0;
 padding:10px;
-
 }
 
 .first-container label {
 margin-top: 0px;
 margin-left: 5px;
-position: fixed;
-
 color: white;
 font-size: 10px;
 font-family: "Caveat Brush", cursive;
@@ -520,6 +513,7 @@ flex-direction: column;
 
 .sub-container .card{
 
+position: relative;
 
 
 width: 300px;height: 200px;
