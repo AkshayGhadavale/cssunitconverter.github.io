@@ -454,11 +454,7 @@ font-family: "Caveat Brush", cursive;
 background-color: violet;
 /* background-color: #28272F; */
 display: flex;
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
+
 flex-direction: row-reverse;
 
 flex-wrap: wrap;
