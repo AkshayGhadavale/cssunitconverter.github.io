@@ -460,7 +460,8 @@ font-family: "Caveat Brush", cursive;
 background-color: black;
 /* background-color: #28272F; */
 display: flex;
-
+overflow-y: hidden;
+overflow-x: hidden;
 flex-direction: row-reverse;
 top:450px;
 flex-wrap: wrap;
