@@ -521,8 +521,8 @@ flex-direction: column;
 
 .sub-container .card{
 
-position: relative;
 
+position: fixed;
 
 width: 300px;height: 200px;
 /*background:linear-gradient(60deg,#8E36D6,#D61F76);*/
