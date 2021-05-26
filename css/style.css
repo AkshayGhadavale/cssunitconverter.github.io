@@ -385,7 +385,7 @@ padding-right: 10px;
 .header-container {
   height: 40%;
   display: flex;
-  background-color: black;
+  background-color: green;
   border: 2px solid blue;
 
 
@@ -451,7 +451,7 @@ font-family: "Caveat Brush", cursive;
 
 
 .first-container {
-background-color: black;
+background-color: violet;
 /* background-color: #28272F; */
 display: flex;
 
