@@ -431,11 +431,12 @@ padding: 10px;
 border-radius: 10px;
 font-family: "Caveat Brush", cursive;
 font-size: 30px;
-
+position: fixed;
 }
 .pixelgp{
 margin-top:0px;
 padding: 20px;
+position: fixed;
 }
 
 
@@ -445,6 +446,7 @@ margin-left: 10px;
 color: #ffff;
 font-size: 20px;
 font-family: "Caveat Brush", cursive;
+position: fixed;
 /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    */
 }
@@ -456,7 +458,7 @@ background-color: black;
 display: flex;
 
 flex-direction: row-reverse;
-
+position: fixed;
 flex-wrap: wrap;
 justify-content: center;
 
@@ -506,11 +508,7 @@ width: 100%;
 height: 60%;
 background-color: white;
 display: flex;
-position:absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
+position: fixed;
 margin-top: -150px;
 
 justify-content:center;
