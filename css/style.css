@@ -466,7 +466,7 @@ border-bottom-right-radius: 90%;
 border-bottom-left-radius: 90%;
 }
 .first-container input[type="text"] {
-margin-left: 20px;
+margin-left: 10px;
 width: 100px;
 padding: 10px;
 border-radius: 10px;
@@ -474,7 +474,7 @@ font-family: "Caveat Brush", cursive;
 font-size: 15px;
 }
 .first-container .gp1 {
-margin-top: 20px;
+margin-top: 10px;
 margin-bottom: 0;
 margin-left: 0;
 
