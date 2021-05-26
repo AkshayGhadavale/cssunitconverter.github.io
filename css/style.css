@@ -340,12 +340,9 @@ color: whitesmoke;
   .navbarx {
     width: 100%;
     height: 50px;
- 
+    background-color: black;
     border-bottom: 5px solid darkcyan;
-    overflow: hidden;
-    top: 0;
-    position: fixed;
-    
+  
     display: flex;
     
   }
@@ -353,11 +350,10 @@ color: whitesmoke;
   .navright{
       width: 70%;
       height: 50px;
- 
+      background-color: black;
       display: flex;
    justify-content: flex-end;
    align-content: flex-end;
-   background-color: red;
   }
   .navlist{
       display: none;
@@ -394,7 +390,7 @@ padding-right: 10px;
 .header-container {
   height: 40%;
   display: flex;
-  background-color:black
+  background-color:yellow;
   border: 2px solid blue;
 
 
@@ -574,7 +570,7 @@ visibility: hidden;
 
 .footer{
   width: 100%;
-  height: 60%;
+  height: 20%;
   background-color: greenyellow;
 }
 
