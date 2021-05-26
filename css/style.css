@@ -188,7 +188,7 @@ margin-top: 0px;
   border-bottom-left-radius: 90%;
 }
 .first-container input[type="text"] {
-  margin-left: 10px;
+  margin-left: 20px;
   width: 150px;
   padding: 10px;
   border-radius: 10px;
@@ -386,7 +386,7 @@ padding-right: 10px;
   height: 40%;
   display: flex;
   background-color: black;
-  
+  position:static;
 
 
 }
@@ -454,6 +454,7 @@ font-family: "Caveat Brush", cursive;
 background-color: black;
 /* background-color: #28272F; */
 display: flex;
+
 flex-direction: row-reverse;
 
 flex-wrap: wrap;
@@ -469,26 +470,26 @@ border-bottom-left-radius: 90%;
 margin-left: 10px;
 width: 100px;
 padding: 10px;
+display: block;
+
 border-radius: 10px;
 font-family: "Caveat Brush", cursive;
 font-size: 15px;
-position:fixed;
 }
 .first-container .gp1 {
 margin-top: 10px;
 margin-bottom: 0;
 margin-left: 0;
-position: fixed;
+
 margin-right: 0;
 padding:10px;
 }
 
 .first-container label {
 margin-top: 0px;
-margin-left: 0px;
+margin-left: 5px;
 color: white;
 font-size: 10px;
-position: fixed;
 font-family: "Caveat Brush", cursive;
 /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    */
@@ -499,7 +500,7 @@ width: 100%;
 height: 60%;
 background-color: white;
 display: flex;
-position: fixed;
+
 margin-top: -150px;
 
 justify-content:center;
