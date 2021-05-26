@@ -322,10 +322,7 @@ color: whitesmoke;
 
 /*for mobile */
 @media only screen and (max-width: 600px) {
-  html{
-    display: block !important;
-    overflow: hidden !important;
-  }
+ 
 
   .wrapper {
     width: 100%;
