@@ -471,7 +471,7 @@ border-bottom-left-radius: 90%;
 margin-left: 10px;
 width: 100px;
 padding: 10px;
-
+display: block;
 
 border-radius: 10px;
 font-family: "Caveat Brush", cursive;
@@ -481,7 +481,7 @@ font-size: 15px;
 margin-top: 10px;
 margin-bottom: 0;
 margin-left: 0;
-position: fixed;
+
 margin-right: 0;
 padding:10px;
 
@@ -517,7 +517,7 @@ flex-direction: column;
 }
 
 .sub-container .card{
-
+  display: block;
 
 position: fixed;
 
