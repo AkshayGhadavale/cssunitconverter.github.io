@@ -343,6 +343,7 @@ color: whitesmoke;
     background-color: black;
     border-bottom: 5px solid darkcyan;
     position: fixed;
+    top: 0;
     display: flex;
     
   }
