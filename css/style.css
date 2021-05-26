@@ -322,7 +322,10 @@ color: whitesmoke;
 
 /*for mobile */
 @media only screen and (max-width: 600px) {
-  
+  html{
+    display: block !important;
+    overflow: hidden !important;
+  }
 
   .wrapper {
     width: 100%;
@@ -393,7 +396,7 @@ padding-right: 10px;
   display: flex;
 padding-top:50px;
     background-color:black;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 
 
 }
@@ -470,7 +473,7 @@ justify-content: center;
 align-content: flex-start;
 margin-top: -80px;
 height: 50%;
-border: 2px solid red;
+/* border: 2px solid red; */
 border-bottom-right-radius: 90%;
 border-bottom-left-radius: 90%;
 }
