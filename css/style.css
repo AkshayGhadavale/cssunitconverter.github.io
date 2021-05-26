@@ -472,12 +472,13 @@ padding: 10px;
 border-radius: 10px;
 font-family: "Caveat Brush", cursive;
 font-size: 15px;
+position:fixed;
 }
 .first-container .gp1 {
 margin-top: 10px;
 margin-bottom: 0;
 margin-left: 0;
-
+position: fixed;
 margin-right: 0;
 padding:10px;
 }
@@ -487,6 +488,7 @@ margin-top: 0px;
 margin-left: 0px;
 color: white;
 font-size: 10px;
+position: fixed;
 font-family: "Caveat Brush", cursive;
 /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    */
