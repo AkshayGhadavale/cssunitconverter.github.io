@@ -337,7 +337,7 @@ color: whitesmoke;
     height: 50px;
     background-color: black;
     border-bottom: 5px solid darkcyan;
-  
+  position: fixed;
     display: flex;
     
   }
@@ -481,7 +481,7 @@ font-size: 15px;
 margin-top: 10px;
 margin-bottom: 0;
 margin-left: 0;
-
+position: fixed;
 margin-right: 0;
 padding:10px;
 }
