@@ -466,10 +466,10 @@ top:500px;
 flex-wrap: wrap;
 justify-content: center;
 
-align-content: flex-start;
+align-content: center;
 margin-top: 0px;
-height: 50%;
-/* border: 2px solid red; */
+height: 50%; 
+border: 2px solid red; 
 border-bottom-right-radius: 0%;
 border-bottom-left-radius: 0%;
 }
