@@ -352,7 +352,7 @@ color: whitesmoke;
   .navright{
       width: 70%;
       height: 50px;
-      background-color: black;
+      background-color: red;
       display: flex;
    justify-content: flex-end;
    align-content: flex-end;
