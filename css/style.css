@@ -9,13 +9,21 @@
   width: 100%;
   height: 200vh;
   /* background-color: hsl(145, 42%, 45%); */
-background-color: black;
+background-color: darkcyan;
+position: absolute;
+  top:0px;
+
+left: 0;
+right: 0;
+bottom: 0;
 }
 .main-container {
   width: 100%;
-  height: 40%;
-  
-  background-color: darkcyan;
+  height: 20%;
+/* border: 2px solid red; */
+  background-color: green;
+
+
 }
 .sub-container {
   width: 100%;
@@ -34,7 +42,7 @@ background-color: black;
   width: 100%;
   height: 50px;
   background-color: black;
-
+z-index: 999;
   display: flex;
   
 }
@@ -135,11 +143,12 @@ background-color: black;
 }
 
 .header-container {
-  height: 50%;
+  height: 100%;
   display: flex;
   background-color: black;
-  
-
+ padding-top:0px ;
+/* border: solid 2px blue; */
+ 
 
 }
 
@@ -178,15 +187,16 @@ background-color: black;
   /* background-color: #28272F; */
   display: flex;
   flex-direction: row-reverse;
-
+/* border:  2px solid purple; */
   flex-wrap: wrap;
   justify-content: center;
 
-  align-content: flex-end;
+  align-content: flex-start;
 margin-top: 0px;
-  height: 50%;
+  height: 20%;
   border-bottom-right-radius: 90%;
   border-bottom-left-radius: 90%;
+  
 }
 .first-container input[type="text"] {
   margin-left: 20px;
@@ -308,8 +318,9 @@ color: whitesmoke;
 }
 .footer{
   width: 100%;
-  height: 30px;
+  height: 40%;
   background-color: greenyellow;
+  
 }
 
 
@@ -322,20 +333,28 @@ color: whitesmoke;
 
 
 /*for mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) and  (min-width:360px){
  
 
   .wrapper {
     width: 100%;
     height: 200vh;
     /* background-color: hsl(145, 42%, 45%); */
-  background-color: black;
-  }
+  background-color: white;
+  position: absolute;
+  top:0px;
+
+left: 0;
+right: 0;
+bottom: 0;}
   .main-container {
     width: 100%;
     height: 60%;
-    
-    background-color: white;
+    display: flex;
+ 
+    flex-direction: column;
+
+  
   }
 
   .navbarx {
@@ -345,6 +364,7 @@ color: whitesmoke;
     border-bottom: 5px solid darkcyan;
     position: fixed;
     display: flex;
+    z-index: 999;
  
     
   }
@@ -352,10 +372,11 @@ color: whitesmoke;
   .navright{
       width: 70%;
       height: 50px;
-      background-color: red;
+  
       display: flex;
    justify-content: flex-end;
    align-content: flex-end;
+  
   }
   .navlist{
       display: none;
@@ -394,7 +415,16 @@ padding-right: 10px;
   display: flex;
 padding-top:50px;
     background-color:black;
-    border: blue 2px solid;
+    position: absolute;
+
+    top: 0px;
+    
+    bottom: 0;
+    
+    left: 0;
+    
+    right: 0;
+ 
 
 
 }
@@ -460,19 +490,28 @@ font-family: "Caveat Brush", cursive;
 
 .first-container {
 background-color: black;
-border: red 2px solid;
+/* border: red 2px solid; */
 display: flex;
-position: relative;
-top:0px;
+
+
 flex-wrap: wrap;
 justify-content: center;
 
 align-content: flex-start;
 
-height: 50%; 
+height: 60%; 
 
 border-bottom-right-radius: 0%;
 border-bottom-left-radius: 0%;
+position: absolute;
+
+top:320px;
+
+bottom: 0;
+
+left: 0;
+
+right: 0;
 }
 .first-container input[type="text"] {
 margin-left: 5px;
@@ -507,8 +546,6 @@ font-family: "Caveat Brush", cursive;
 width: 100%;
 height: 60%;
 background-color: white;
-position: relative;
-top: 50px;
 
 margin-top: -150px;
 
@@ -517,6 +554,15 @@ align-items: center;
 align-content: center;
 
 flex-direction: column;
+position: absolute;
+
+top:1100px;
+
+bottom: 0;
+
+left: 0;
+
+right: 0;
 }
 
 .sub-container .card{
@@ -531,7 +577,7 @@ background-image: linear-gradient(to right top, #008b8b, #0087a8, #007dbe, #656b
 text-align: center;
 transform: perspective(1000px);
 
-margin-top: 10px;
+margin-top: 30px;
 transform: preserve-3d;
 justify-content: center;
 
@@ -572,9 +618,20 @@ visibility: hidden;
 }
 
 .footer{
+  
+
   width: 100%;
   height:20%;
   background-color: greenyellow;
+  position: relative;
+  top:1100px;
+
+bottom: 0;
+
+left: 0;
+
+right: 0;
+  
 }
 
 

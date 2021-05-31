@@ -3,6 +3,36 @@
 AOS.init({
     duration: 1200,
   })
+
+
+  function isNumber(evt) {
+
+
+
+    var iKeyCode = (evt.which) ? evt.which : evt.keyCode
+    if (iKeyCode != 46 && iKeyCode > 31 && (iKeyCode < 48 || iKeyCode > 57))
+    {
+        alert('num') ;
+        return false;
+}
+        else{
+            convipx();
+            return true;
+           
+        }
+ 
+
+ 
+}  
+
+
+
+
+
+
+
+
+
 //for px to other
 
 function convipx() {  
