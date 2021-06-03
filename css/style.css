@@ -19,9 +19,9 @@ bottom: 0;
 }
 .main-container {
   width: 100%;
-  height: 20%;
+  height: 50%;
 /* border: 2px solid red; */
-  background-color: green;
+  background-color: darkcyan;
 
 
 }
@@ -38,12 +38,15 @@ bottom: 0;
 
   flex-direction: row;
 }
+
+
 .navbarx {
   width: 100%;
   height: 50px;
   background-color: black;
 z-index: 999;
   display: flex;
+  flex-direction: row;
   
 }
 
@@ -51,14 +54,16 @@ z-index: 999;
     width: 30%;
 
     height: 50px;
-   
+    /* border:2px solid red; */
 
 }
+
 .navright{
     width: 70%;
       height: 50px;
-   
+   display: flex;
   
+   /* border:2px solid green; */
 
 
 }
@@ -72,26 +77,35 @@ z-index: 999;
 
 .navlist {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-content: center;
   color: antiquewhite;
- 
+
   list-style: none;
  
-  margin-left: 0px;
+  margin-left: 100px;
   height: 50px;
 }
 .navlist li:hover{
   color: darkcyan;
   transform: scale(1.1); 
 }
+.navlist1 {
+  display: none;
+}
 .sublist {
+ width: 80%;;
   display: flex;
-  margin-right: 300px;
+  margin-right: 200px;
+  flex-direction: row;
+ 
 }
 
 .navlist li {
   padding: 20px;
+  text-align: center;
+width: 90px;
+ 
   font-weight: bold;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -113,22 +127,37 @@ z-index: 999;
 .navbarx button {
   width: 50px;
   height: 33px;
-  position: relative;
- 
 
-  right: 4px;
+ margin-top: 10px;
+
+
+
+
   background-color: transparent;
   border-left: none;
 
   border-top-right-radius: 100%;
   border-bottom-right-radius: 100%;
 }
+.sublist1 form{
+  display: flex;
+ 
+  justify-content: flex-end;
+}
 .sublist1 {
-  margin-right: 10px;
+  margin-right: 0px;
+  width:80%;
+  height: 100%;
+   
+
+  display: flex;
+flex-direction: row;
 }
 
 .navbarx button i {
+
   color: white;
+
 }
 
 .logoleft {
@@ -143,7 +172,7 @@ z-index: 999;
 }
 
 .header-container {
-  height: 100%;
+  height: 40%;
   display: flex;
   background-color: black;
  padding-top:0px ;
@@ -193,7 +222,7 @@ z-index: 999;
 
   align-content: flex-start;
 margin-top: 0px;
-  height: 20%;
+  height: 60%;
   border-bottom-right-radius: 90%;
   border-bottom-left-radius: 90%;
   
@@ -323,7 +352,9 @@ color: whitesmoke;
   
 }
 
-
+.navmobile{
+  display: none;
+}
 
 
 
@@ -338,12 +369,12 @@ color: whitesmoke;
 
   .wrapper {
     width: 100%;
-    height: 200vh;
+    height: 250vh;
     /* background-color: hsl(145, 42%, 45%); */
   background-color: white;
   position: absolute;
   top:0px;
-
+z-index: 0;
 left: 0;
 right: 0;
 bottom: 0;}
@@ -351,53 +382,120 @@ bottom: 0;}
     width: 100%;
     height: 60%;
     display: flex;
- 
+ position: relative;
+
+background-color: black;
     flex-direction: column;
 
   
   }
 
+  .h50{
+    
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+
+    height: 50px;
+
+  }
+  .navbarx.h250{
+   
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+
+background-color: brown;
+    height: 250px;
+
+  }
+
   .navbarx {
     width: 100%;
     height: 50px;
-    background-color: black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
     border-bottom: 5px solid darkcyan;
-    position: fixed;
+  background-color: rgb(0, 0, 0,0.9);
     display: flex;
-    z-index: 999;
+    flex-direction: row;
+    transition: all .5s linear;
  
     
   }
+  .navleft{
+    width: 20%;
+  
+    height: 100%;
+    
+}
+.navleft .logoleft{
+
+height: 40px;
+margin-left:5px;
+margin-top:2px;
+
+}
+
 
   .navright{
-      width: 70%;
-      height: 50px;
-  
-      display: flex;
-   justify-content: flex-end;
-   align-content: flex-end;
-  
+      width: 80%;
+      height:100%;
+
+ 
+ display: flex;
+
+      
   }
   .navlist{
-      display: none;
+    display: none;
+   
+  }
+  .navright .navlist1{
+   width: 80%;
+   height: 100%;
+   display:flex;
+
+justify-content: center;
+text-align: center;
+      
+  }
+  .sublist2{
+
+position: absolute;
+top: -220px;
+
+    flex-direction: column;
+    transition: all .5s linear;
+  }
+  .navlist1 li:hover{
+    color: #008b8b;
+    transform: scale(1.1); 
+  
   }
   
-  .sublist1{
+  .navlist1 li {
+ color:white;
+ list-style: none;
+    padding: 20px;
+    font-weight: bold;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+   position: relative;
+  }
+  
+    
+  .sublist1 {
+    width:20% ;
+
+    height: 100%;
+  }
+  
+  .sublist1 form{
     display: none;
 
   }
-  .navleft{
-      width: 30%;
-      background-color: black;
-      height: 50px;
-      
-  }
-  .navleft .logoleft{
-
- height: 40px;
- margin-left:5px;
-  margin-top:2px;
-  }
+  
 
   .navright .logoright{
   display:block;
@@ -407,15 +505,27 @@ padding-right: 10px;
  margin:0 px;
   }
 
+  .navmobile{
+    width: 20%;
+    height: 640px;
+    background-color: blue;
+    border: 2px solid red;
+    position: absolute;
+ z-index: 99;
+    display: flex;
+
+
+
+  }
 
 
   
 .header-container {
   height: 30%;
-  display: flex;
-padding-top:50px;
+  display:flex;
+
     background-color:black;
-    position: absolute;
+position: relative;;
 
     top: 0px;
     
@@ -424,13 +534,14 @@ padding-top:50px;
     left: 0;
     
     right: 0;
- 
+ z-index: 5;
 
 
 }
 
 .header-container .headcontain {
 width: 100%;
+height: 100%;
 
 /* border:solid 1px red; */
 justify-content: center;
@@ -443,6 +554,7 @@ margin-left: 0px;
   font-size: 40px;
   color: white;
   margin: 10px;
+
   font-family: "Caveat Brush", cursive;
   /* justify-content: center;
     align-content: flex-end;
@@ -499,13 +611,13 @@ justify-content: center;
 
 align-content: flex-start;
 
-height: 60%; 
+height: 80%; 
 
 border-bottom-right-radius: 0%;
 border-bottom-left-radius: 0%;
 position: absolute;
 
-top:320px;
+top: 350px;
 
 bottom: 0;
 
@@ -516,7 +628,7 @@ right: 0;
 .first-container input[type="text"] {
 margin-left: 5px;
 width: 100px;
-padding: 10px;
+
 
 
 border-radius: 10px;
@@ -541,34 +653,54 @@ font-family: "Caveat Brush", cursive;
 /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    */
 }
+.top-container{
+  width: 100%;
+  height: 50%;
+  
+background-color: black;
 
-.sub-container {
-width: 100%;
-height: 60%;
-background-color: white;
-
-margin-top: -150px;
-
-justify-content:center;
-align-items: center;
-align-content: center;
-
-flex-direction: column;
 position: absolute;
 
-top:1100px;
+top: 900px;
 
 bottom: 0;
 
 left: 0;
 
 right: 0;
+
+
+}
+.sub-container {
+width: 100%;
+height: 100%;
+background-color:black ;
+
+
+position: relative;
+
+top: 00px;
+
+bottom: 0;
+
+left: 0;
+
+right: 0;
+
+
+justify-content:center;
+align-items: center;
+align-content: center;
+
+flex-direction: column;
+
+
 }
 
 .sub-container .card{
 
 
-position: relative;
+
 width: 300px;height: 200px;
 /*background:linear-gradient(60deg,#8E36D6,#D61F76);*/
 
@@ -577,8 +709,8 @@ background-image: linear-gradient(to right top, #008b8b, #0087a8, #007dbe, #656b
 text-align: center;
 transform: perspective(1000px);
 
-margin-top: 30px;
-transform: preserve-3d;
+margin-top: 20px;
+
 justify-content: center;
 
 border-radius: 20px;
@@ -621,12 +753,12 @@ visibility: hidden;
   
 
   width: 100%;
-  height:20%;
+  height:10%;
   background-color: greenyellow;
   position: relative;
-  top:1100px;
+  top:200px;
 
-bottom: 0;
+bottom: 0px;
 
 left: 0;
 

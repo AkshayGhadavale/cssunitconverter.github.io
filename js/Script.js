@@ -1,19 +1,51 @@
 
 
-AOS.init({
-    duration: 1200,
-  })
 
 
+  function myFu() {
+    var element = document.getElementById("navbar23");
+    element.classList.add("h250");
+ }
+
+  function myFunction() {
+     var x = document.getElementById("navbar23");
+     var y = document.getElementById("topcon");
+     var c =document.getElementById("navli");
+ if (x.style.height === "50px") {
+
+   
+  
+    
+      x.style.height = "300px";
+//   c.style.display="flex";
+      c.style.top="50px";
+  
+      y.style.top="1100px";
+      var c =document.getElementById("igbtn").src="./images/cross.png";
+      var c =document.getElementById("igbtn").style.height="60px";
+     
+    } else {
+       
+       
+       x.style.height = "50px";
+       c.style.top="-250px";
+    // c.style.display="none";
+    y.style.top="900px";
+       var c =document.getElementById("igbtn").src="./images/menu.png";
+       var c =document.getElementById("igbtn").style.height="50px";
+
+    }
+  
+  }
   function isNumber(evt) {
 
 
 
     var iKeyCode = (evt.which) ? evt.which : evt.keyCode
     if (iKeyCode != 46 && iKeyCode > 31 && (iKeyCode < 48 || iKeyCode > 57))
-    {
+    {  return false;
         alert('num') ;
-        return false;
+      
 }
         else{
             convipx();
@@ -225,8 +257,8 @@ function convirad() {
 
 
     let radi= document.getElementById("rad1").value
-    let emsum =parseFloat(radi)*parseFloat(0.093);
- document.getElementById("px1").value =emsum;
+    let emsum =Number(radi)*Number(0.094);
+ document.getElementById("px1").value =Number(emsum);
    And_This(emsum);
 }  
 
@@ -275,8 +307,8 @@ let inch1=insum.toFixed(2);
  document.getElementById("per1").value = parseFloat(pertisum );
 
  
- let radsum =parseFloat(pixels)/parseFloat(0.093)
- document.getElementById("rad1").value = parseFloat(radsum );
+ let radsum =Number(pixels)/Number(0.094)
+ document.getElementById("rad1").value =Number(radsum );
 
 
 
