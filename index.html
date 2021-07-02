@@ -2,15 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet" />
 </head>
-
 
 <body>
     <div class="wrapper">
@@ -22,150 +21,125 @@
 
         </div> -->
         <div class="navbarx" id="navbar23">
-    <div class="navleft">
-        <img class="logoleft"src="./images/mylogo.png"/>
-    </div> 
-     <div class="navright" >
-        <!-- <img class="logoright" id="igbtn"onclick="myFunction()" src="./images/menu.png"/> -->
-            <ul class="navlist">
-                <div class="sublist">
-                <li>Home</li>
-                <li>codedemos</li>
-                <li>Tutorilas</li>
-                <li>Contact us</li>
-            </div> 
-            </ul>
-            <ul class="navlist1" >
-                <div class="sublist2" id="navli">
-                <li>Home</li>
-                <li>codedemos</li>
-                <li>Tutorilas</li>
-                <li>Contact us</li>
+            <div class="navleft">
+                <img class="logoleft" src="./images/mylogo.png" />
             </div>
-            </ul>
-            <div class="sublist1">
-                <img class="logoright" id="igbtn"onclick="myFunction()" src="./images/menu.png"/> 
-                <form class=" " action="action_page.php">
-                    
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                  </form> 
+            <div class="navright">
+                <!-- <img class="logoright" id="igbtn"onclick="myFunction()" src="./images/menu.png"/> -->
+                <ul class="navlist">
+                    <div class="sublist">
+                        <li class="active"><a href="./index.html"> Home</a></li>
+                        <li><a href="./codedemos.html">Codedemos </a></li>
+                        <li><a href="./codedemos.html">Tutorials </a></li>
+                        <li><a href="./codedemos.html">Contact us</a></li>
+                    </div>
+                </ul>
+                <ul class="navlist1">
+                    <div class="sublist2" id="navli">
+                        <li class="active"><a href="./index.html"> Home</a></li>
+                        <li><a href="./codedemos.html">Codedemos </a></li>
+                        <li><a href="./codedemos.html">Tutorials </a></li>
+                        <li><a href="./codedemos.html">Contact us</a></li>
+                    </div>
+                </ul>
+                <div class="sublist1">
+                    <img class="logoright" id="igbtn" onclick="myFunction()" src="./images/menu.png" />
+                    <!-- <form class="" action="action_page.php">
+                        <input type="text" placeholder="Search.." name="search" />
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form> -->
+                </div>
             </div>
-            
-          </div>
-          
-            <img class="logoright" id="igbtn"onclick="myFunction()" src="./images/menu.png"/>
-            
-           
+
+            <img class="logoright" id="igbtn" onclick="myFunction()" src="./images/menu.png" />
         </div>
-        
-   
 
         <div class="main-container">
-<div class="header-container">
-    <div class="headcontain">
-    <h1>Css Unit Converter</h1>
-    <p> CSS has several different units for expressing a length. Many CSS properties take "length" values, such as width , margin , padding , font-size , etc. Length is a number followed by a length unit, so you used this converter foe easy work</p>
-    <div class="pixelgp" >
-        <label for="pixel1">Pixel</label>
-        <input type="tel" name="" id="px1" onkeyup="return isNumber(event)"/>
-    </div> 
-</div>
-
-</div>
-
-
-
+            <div class="header-container">
+                <div class="headcontain">
+                    <h1>Css Unit Converter</h1>
+                    <p>
+                        CSS has several different units for expressing a length. Many CSS properties take "length" values, such as width , margin , padding , font-size , etc. Length is a number followed by a length unit, so you used this converter foe easy work
+                    </p>
+                    <div class="pixelgp">
+                        <label for="pixel1">Pixel</label>
+                        <input type="tel" name="" id="px1" onkeyup="return isNumber(event)" />
+                    </div>
+                </div>
+            </div>
 
             <div class="first-container">
-                
-<div class="gp1" id="gp1">
-                <label for="em1">EM</label>
-                <input type="tel" name="" id="em1" onkeyup="conviem()"/>
-            </div>
-            <div class="gp1">
-                <label for="rem1">REM</label>
-                <input type="tel" name="" id="rem1"onkeyup="convirem()">
-            </div>
-            <div class="gp1">
-                <label for="inch1">INCH</label>
-                <input type="tel" name="" id="inch1" onkeyup="conviin()"/>
-            </div>
-            <div class="gp1">
-                <label for="pc1">PC</label>
-                <input type="tel" name="" id="pc1" onkeyup="convipc()">
-            </div>
-            <div class="gp1">
-                <label for="pt1">PT</label>
-                <input type="tel" name="" id="pt1" onkeyup="convipt()">
-            </div>
-            <div class="gp1">
-                <label for="per1">%</label>
-                <input type="tel" name="" id="per1" onkeyup="conviper()">
-            </div>
-            <!-- <div class="gp1">
+                <div class="gp1" id="gp1">
+                    <label for="em1">EM</label>
+                    <input type="tel" name="" id="em1" onkeyup="conviem()" />
+                </div>
+                <div class="gp1">
+                    <label for="rem1">REM</label>
+                    <input type="tel" name="" id="rem1" onkeyup="convirem()" />
+                </div>
+                <div class="gp1">
+                    <label for="inch1">INCH</label>
+                    <input type="tel" name="" id="inch1" onkeyup="conviin()" />
+                </div>
+                <div class="gp1">
+                    <label for="pc1">PC</label>
+                    <input type="tel" name="" id="pc1" onkeyup="convipc()" />
+                </div>
+                <div class="gp1">
+                    <label for="pt1">PT</label>
+                    <input type="tel" name="" id="pt1" onkeyup="convipt()" />
+                </div>
+                <div class="gp1">
+                    <label for="per1">%</label>
+                    <input type="tel" name="" id="per1" onkeyup="conviper()" />
+                </div>
+                <!-- <div class="gp1">
                 <label for="ip7">EM</label>
                 <input type="tel" name="" id="ip7">
             </div> -->
-            <!-- <div class="gp1">
+                <!-- <div class="gp1">
                 <label for="ip8">VH</label>
                 <input type="tel" name="" id="ip8">
         </div>  -->
-         <div class="gp1" id="">
-            <label for="rad1">RAD</label>
-            <input type="tel" name="" id="rad1"onkeyup="convirad()">
-    </div> 
-
-
+                <div class="gp1" id="">
+                    <label for="rad1">RAD</label>
+                    <input type="tel" name="" id="rad1" onkeyup="convirad()" />
+                </div>
             </div>
         </div>
 
+        <div class="top-container" id="topcon">
+            <div class="sub-container">
+                <div class="card">
+                    <div class="front-card">
+                        <img src="./images/html.png" />
+                        <h1>html5</h1>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front-card">
+                        <img src="./images/css.png" />
+                        <h1>css3</h1>
+                    </div>
 
-
-
-
-<div class="top-container" id="topcon">
-        <div class="sub-container">
-<div class="card "  >
-    <div class="front-card">
-    <img src="./images/html.png"/>
-    <h1>html5</h1>
-    
-</div>
-
-
-</div>
-<div class="card"  >
-    <div class="front-card">
-    <img src="./images/css.png"/>
-    <h1>css3</h1>
-</div>
-</div>
-<div class="card" >
-    <div class="front-card">
-    <img src="./images/js.png"/>
-    <h1>javascript</h1>
-</div>
-</div>
-
-
+                </div>
+                <div class="card">
+                    <div class="front-card">
+                        <img src="./images/js.png" />
+                        <h1>javascript</h1>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
+    <!-- <div class="footer"></div> -->
 
-</div>
-        <!-- <div class="footer"></div> -->
-   
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js">
-    
-    
-    AOS.init({
-  duration: 1200,
-})
- 
-
-</script>
-    <script src="./js/Script.js"></script> 
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
+    <script src="./js/Script.js"></script>
 </body>
 
 </html>
