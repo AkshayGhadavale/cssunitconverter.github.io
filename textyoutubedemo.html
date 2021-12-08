@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ 
+	<title>YouTube: Retrieve Title, Description and Thumbnail</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    
+</body>
+<script>
+  
+  links=["https://youtu.be/QHdkC6Kn0Io","https://youtu.be/BT0zd0kmTxM"];
+
+// alert(links[0]);
+
+//  for (i = 0; i < links.length; i++) {
+
+   
+
+
+
+    $(function() {
+        for (i = 0; i < links.length; i++) {
+        // alert(links[0]);
+        
+        
+				let videoid =links[i];
+				var matches = videoid.match(/^https?:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i) || videoid.match(/^https?:\/\/youtu\.be\/([^?]+)/i);
+				if (matches) {
+					videoid = matches[1];
+				}
+				if (videoid.match(/^[a-z0-9_-]{11}$/i) === null) {
+					$("<p style='color: #F00;'>Unable to parse Video ID/URL.</p>").appendTo("#video-data-1");
+					return;
+				}
+				$.getJSON("https://www.googleapis.com/youtube/v3/videos", {
+					key: "AIzaSyCS4cCOZuw9mvphsA-MdzFMWTCMyH5FSoc",
+					part: "snippet,statistics",
+					id: videoid
+				}, function(data) {
+					if (data.items.length === 0) {
+						$("<p style='color: #F00;'>Video not found.</p>").appendTo("#video-data-1");
+						return;
+					}
+					$("<img>", {
+						src: data.items[0].snippet.thumbnails.medium.url,
+						width: data.items[0].snippet.thumbnails.medium.width,
+						height: data.items[0].snippet.thumbnails.medium.height
+					}).appendTo("#video-data-1");
+                    h3.innerHTML=(data.items[0].snippet.title);
+                    // alert(data.items[0].snippet.description);
+				// 	$("<h1></h1>").text(data.items[0].snippet.title).appendTo("#video-data-1");
+				// 	$("<p></p>").text(data.items[0].snippet.description).appendTo("#video-data-1");
+				// 	$("<li></li>").text("Published at: " + data.items[0].snippet.publishedAt).appendTo("#video-data-2");
+				// 	$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
+				// 	$("<li></li>").text("Favorite count: " + data.items[0].statistics.favoriteCount).appendTo("#video-data-2");
+				// 	$("<li></li>").text("Like count: " + data.items[0].statistics.likeCount).appendTo("#video-data-2");
+				// 	$("<li></li>").text("Dislike count: " + data.items[0].statistics.dislikeCount).appendTo("#video-data-2");
+				 }).fail(function(jqXHR, textStatus, errorThrown) {
+					$("<p style='color: #F00;'></p>").text(jqXHR.responseText || errorThrown).appendTo("#video-data-1");
+				});
+ 
+var vi1 = document.createElement("DIV");
+vi1.className="vi1";
+
+
+ var vidsec = document.createElement("DIV");
+ vidsec.className="vidsec";
+
+
+var imgvi = document.createElement("img")
+imgvi.src="http://img.youtube.com/vi/tgbNymZ7vqY/hqdefault.jpg";
+imgvi.className="imgvi";
+imgvi.style.width="100%";
+imgvi.style.height="100%";
+
+var title = document.createElement("DIV");
+title.className="title";
+var other = document.createElement("DIV");
+other.className="other";
+
+
+var h3 =document.createElement("h3");
+h3.innerHTML="Jersey - Official Trailer | Shahid Kapoor | Mrunal Thakur | Gowtam Tinnanuri | 31st Dec 21";
+
+var h4 =document.createElement("h4");
+h4.innerHTML="Zee Music Company";
+
+var infosec =document.createElement("DIV");
+infosec.className="infosec";
+
+
+// document.getElementById("vi1").appendChild(infosec);
+document.getElementById("vilst").appendChild(vi1);
+vi1.append(vidsec);
+vi1.append(infosec);
+infosec.append(title);
+infosec.append(other);
+title.append(h3);
+other.append(h4);
+
+vidsec.appendChild(imgvi);
+
+
+
+
+         
+
+
+            }
+		});
+     
+</script>
+</html>

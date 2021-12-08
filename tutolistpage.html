@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
+    .wrapper-tlist{
+        background: black;
+        width: 100%;
+        height: 100px;
+       
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+    }
+    .wrapper-tlist  h1{
+        color :blanchedalmond;
+        font-family: "Caveat Brush";
+}
+    
+    .btn1 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10%;
+  }
+
+  #hindibtn{
+    background: rgb(0, 0, 0); 
+    color: white; 
+    border: 2px solid #008CBA;
+  }
+  
+  #englishbtn{
+    background: rgb(0, 0, 0); 
+    color: white; 
+    border: 2px solid #008CBA;
+  }
+  
+  /* .btn1:hover {
+    background-color: #008CBA;
+    color: white;
+  } */
+  .btngroup{
+height: 100%;
+width: 20%;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+  }
+  .txtgroup{
+    height: 100%;
+width: 20%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+  }
+  .videolist{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+     background-color: black;
+      height: 80vh;
+  }
+  .list-vi{
+      width: 30%;
+      height: 100%;
+      background-color: black;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .video-sec{
+    width: 70%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .vi1
+  {
+      margin-top: 30px;
+      margin-left: 20px;
+      width: 90%;
+      height: 150px;
+      align-self: center;
+      justify-self: center;
+    
+    
+ /* border:1px solid white;  */
+border-radius: 16px; 
+
+/* max-width: 100%;
+min-height: 500px; */
+/* box-shadow: 0px 3px 5px -1px white,
+  0px 5px 8px 0px wheat,
+  0px 1px 14px 0px white; */
+
+    
+      display: flex;
+      
+  }
+  .vidsec{
+width: 40%;
+height: 100%;
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+/* border-radius: 16px;  */
+/* background-color: blue; */
+  }
+   .videc #imgvi{
+      width: 60%;
+      height: 60%;
+      
+     
+  } 
+ 
+
+  .imgch {
+      width: 60%;
+      height: 60%;
+      border-radius: 50%;
+     
+  } 
+ 
+  .infosec{
+    width: 60%;
+height: 100%;
+
+display: flex;
+flex-direction: column;
+
+  }
+  .infosec .title
+  {
+      width: 100%;
+      height: 100%;
+  display: flex;
+  align-items: center;
+
+   
+  }
+  .infosec .title h3{
+margin-top: 10px;
+  color: white;
+  margin-left: 10px;
+  font-family: 'Fuzzy Bubbles', cursive;
+  
+   
+  }
+  .infosec .other h4{
+
+
+margin-left: 10px;
+
+ 
+}
+
+ .infosec  .other
+  {  
+      width: 100%;
+      height: 40%;
+      display: flex;
+  align-items: center;
+   
+  }
+  
+</style>
+<body>
+    <div class="navbarx" id="navbar23">
+        <div class="navleft">
+            <img class="logoleft-t" src="/images/mylogo.png" />
+      
+        </div>
+        <div class="navright">
+            <!-- <img class="logoright" id="igbtn"onclick="myFunction()" src="./images/menu.png"/> -->
+            <ul class="navlist">
+                <div class="sublist">
+                    <li ><a href="/index.html"> Home</a></li>
+                    <li><a href="./codedemos.html">Codedemos </a></li>
+                    <li class="active"><a href="./tutorials.html">Tutorials </a></li>
+                    <li><a href="./codedemos.html">Contact us</a></li>
+                </div>
+            </ul>
+            <ul class="navlist1">
+                <div class="sublist2" id="navli">
+                    <li ><a href="./index.html"> Home</a></li>
+                    <li><a href="./codedemos.html">Codedemos </a></li>
+                    <li ><a href="./tutorials.html">Tutorials </a></li>
+                    <li><a href="./codedemos.html">Contact us</a></li>
+                </div>-
+            </ul>
+            <div class="sublist1">
+                <img class="logoright" id="igbtn" onclick="myFunction()" src="./images/menu.png" />
+                <!-- <form class="" action="action_page.php">
+                    <input type="text" placeholder="Search.." name="search" />
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form> -->
+            </div>
+        </div>
+
+        <img class="logoright" id="igbtn" onclick="myFunction()" src="./images/menu.png" />
+    </div>
+
+<div class="wrapper-tlist">
+
+    <div class="txtgroup"><h1>Select Langauge:-</h1></div> <div class="btngroup"> <button id="hindibtn" onclick="colorchange()"  class="btn1"> हिन्दी</button> <button id="englishbtn" class="btn1" onclick="colorchange1()"> English</button></div>
+
+</div>
+<div class="videolist">
+    <div class="list-vi"  id="vilst" >
+        <!-- <div class="vi1">
+            <div class="vidsec">
+                <img src="http://img.youtube.com/vi/tgbNymZ7vqY/hqdefault.jpg" title="YouTube Video" alt="YouTube Video" width="100%" height="100%" />
+            </div>
+            <div class="infosec">
+    <div class="title">
+    <h4>Jersey - Official Trailer | Shahid Kapoor | Mrunal Thakur | Gowtam Tinnanuri | 31st Dec 21</h4>
+        </div>
+        <div class="other">
+            <h4>Zee Music Company</h4>
+        </div>
+    </div>
+        <!-- <div class="vi1"><div class="vidsec"></div><div class="infosec"></div></div>
+        <div class="vi1"><div class="vidsec"></div><div class="infosec"></div></div>
+        <div class="vi1"><div class="vidsec"></div><div class="infosec"></div></div>
+        <div class="vi1"><div class="vidsec"></div><div class="infosec"></div></div>
+        <div class="vi1"><div class="vidsec"></div><div class="infosec"></div></div>
+        <div class="vi1"><div class="vidsec"></div><div class="infosec"></div></div>
+        <div class="vi1"><div class="vidsec"></div><div class="infosec"></div></div>
+        <div class="vi1"><div class="vidsec"></div><div class="infosec"></div></div>
+        <div class="vi1"><div class="vidsec"></div><div class="infosec"></div></div>
+        </div>  -->
+        </div>
+    <div class="video-sec">
+     <iframe id="bigscreen"width="1000" height="500" src="https://www.youtube.com/embed/gvyUuxdRdR4"> </iframe>
+    </div>
+    
+    
+    
+</div>
+
+ <script>
+  
+
+
+
+
+
+function colorchange() {
+
+var background = document.getElementById("hindibtn").style.backgroundColor;
+if (background == "rgb(0, 0, 0)") {
+
+    
+    document.getElementById("hindibtn").style.background = "rgb(0,140,186)";
+    arrname=htmlhin;
+    all();
+
+} else {
+    document.getElementById("hindibtn").style.background = "rgb(0,0,0)";
+    arrname=htmleng;
+    all();
+}
+
+}
+
+
+function colorchange1() {
+
+var background = document.getElementById("englishbtn").style.backgroundColor;
+if (background == "rgb(0, 0, 0)") {
+
+    
+    document.getElementById("englishbtn").style.background = "rgb(0,140,186)";
+
+    arrname=htmleng;
+    all();
+} else {
+    document.getElementById("englishbtn").style.background = "rgb(0,0,0)";
+    arrname=htmlhin;
+    all();
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+let value2 = localStorage.getItem("number1");
+
+
+let arrname;
+
+let htmleng=["https://youtu.be/qz0aGYrrlhU","https://youtu.be/pQN-pnXPaVg","https://youtu.be/UB1O30fR-EE","https://youtu.be/mU6anWqZJcc"]
+             
+let links=["https://youtu.be/QHdkC6Kn0Io","https://youtu.be/QXPWs00RD3A","https://youtu.be/TjyHk-4OHI4","https://youtu.be/E3ByCRqE7Lo"]
+
+
+let htmlhin=["https://youtu.be/QXPWs00RD3A","https://youtu.be/BsDoLVMnmZs","https://youtu.be/-G7bJVAIiEI","https://youtu.be/THp_EowtJ0M"]
+
+let csshin=["https://youtu.be/Edsxf_NBFrw","https://youtu.be/WyxzAU3p8CE","https://youtu.be/w2z7BMr4MY0","https://youtu.be/hkQv0NIxKQY"]
+
+
+
+
+if(value2==0)
+{
+arrname=htmlhin;
+}
+else if(value2==1)
+{
+arrname=csshin;
+}
+
+function viewvi(item){
+
+// alert($(item).attr("id"));
+let vinum =$(item).attr("id");
+
+let num= vinum.replace("vi1-","")
+  let link1=arrname[num];
+  
+
+  let viid=link1.replace("https://youtu.be/", "");
+
+
+// alert(links[num]);
+document.getElementById("bigscreen").src="https://www.youtube.com/embed/"+viid;
+// alert(item);
+
+
+}
+
+all();
+function all(){
+//  for (i = 0; i < links; i++) {
+
+ 
+// var vi1 = document.createElement("DIV");
+// vi1.className="vi1";
+
+
+//  var vidsec = document.createElement("DIV");
+//  vidsec.className="vidsec";
+
+
+// var imgvi = document.createElement("img")
+// imgvi.src="http://img.youtube.com/vi/tgbNymZ7vqY/hqdefault.jpg";
+// imgvi.className="imgvi";
+// imgvi.style.width="100%";
+// imgvi.style.height="100%";
+
+// var title = document.createElement("DIV");
+// title.className="title";
+// var other = document.createElement("DIV");
+// other.className="other";
+
+
+// var h3 =document.createElement("h3");
+// h3.innerHTML="Jersey - Official Trailer | Shahid Kapoor | Mrunal Thakur | Gowtam Tinnanuri | 31st Dec 21";
+
+// var h4 =document.createElement("h4");
+// h4.innerHTML="Zee Music Company";
+
+// var infosec =document.createElement("DIV");
+// infosec.className="infosec";
+
+
+// // document.getElementById("vi1").appendChild(infosec);
+// document.getElementById("vilst").appendChild(vi1);
+// vi1.append(vidsec);
+// vi1.append(infosec);
+// infosec.append(title);
+// infosec.append(other);
+// title.append(h3);
+// other.append(h4);
+
+// vidsec.appendChild(imgvi);
+
+
+
+
+         
+
+
+
+
+
+
+// //  document.getElementById("vi1").appendChild(mySpan);
+//          }
+
+
+   let vinum ="vi1-0";
+ 
+    let num= vinum.replace("vi1-","")
+      let link1=arrname[num];
+      
+
+      let viid=link1.replace("https://youtu.be/", "");
+
+
+    // alert(links[num]);
+document.getElementById("bigscreen").src="https://www.youtube.com/embed/"+viid;
+    // alert(item);
+
+
+
+
+
+
+
+for (let i = 0; i < arrname.length; i++) {
+
+
+       
+            
+var vi1 = document.createElement("DIV");
+vi1.className="vi1";
+vi1.id="vi1-"+i;
+// vi1.value=i;
+vi1.setAttribute("onclick", "viewvi(this)");
+// vi1.onclick="viewvi(this)";
+
+
+
+ var vidsec = document.createElement("DIV");
+ vidsec.className="vidsec";
+
+
+var imgvi = document.createElement("img")
+// imgvi.src="http://img.youtube.com/vi/tgbNymZ7vqY/hqdefault.jpg";
+imgvi.className="imgvi";
+imgvi.id="imgvi-"+i;
+imgvi.style.width="100%";
+imgvi.style.height="100%";
+imgvi.style.borderRadius="12px";
+
+
+
+
+
+
+
+
+var title = document.createElement("DIV");
+title.className="title";
+var other = document.createElement("DIV");
+other.className="other";
+
+
+var h3 =document.createElement("h3");
+h3.id="h3-"+i;
+// h3.innerHTML="Jersey - Official Trailer | Shahid Kapoor | Mrunal Thakur | Gowtam Tinnanuri | 31st Dec 21";
+
+var h4 =document.createElement("h4");
+h4.id="h4-"+i;
+// h4.innerHTML="Zee Music Company";
+
+var infosec =document.createElement("DIV");
+infosec.className="infosec";
+
+
+// document.getElementById("vi1").appendChild(infosec);
+
+vi1.append(vidsec);
+vi1.append(infosec);
+infosec.append(title);
+infosec.append(other);
+title.append(h3);
+other.append(h4);
+
+vidsec.appendChild(imgvi);
+document.getElementById("vilst").appendChild(vi1);
+        // alert(links[0]);
+        
+        
+
+}
+
+
+
+
+
+
+
+
+
+
+         $(function() {
+
+
+            
+for (let i = 0; i < arrname.length; i++) {
+    console.log(arrname[i]);
+
+       
+            let videoid =arrname[i];
+				var matches = videoid.match(/^https?:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i) || videoid.match(/^https?:\/\/youtu\.be\/([^?]+)/i);
+				if (matches) {
+					videoid = matches[1];
+				}
+				if (videoid.match(/^[a-z0-9_-]{11}$/i) === null) {
+					$("<p style='color: #F00;'>Unable to parse Video ID/URL.</p>").appendTo("#video-data-1");
+					return;
+				}
+				$.getJSON("https://www.googleapis.com/youtube/v3/videos", {
+					key: "AIzaSyCS4cCOZuw9mvphsA-MdzFMWTCMyH5FSoc",
+					part: "snippet,statistics",
+					id: videoid
+				}, function(data) {
+					if (data.items.length === 0) {
+						$("<p style='color: #F00;'>Video not found.</p>").appendTo("#video-data-1");
+						return;
+					}
+					$("<img>", {
+						src: data.items[0].snippet.thumbnails.medium.url,
+						width: data.items[0].snippet.thumbnails.medium.width,
+						height: data.items[0].snippet.thumbnails.medium.height
+					}).appendTo("#video-data-1");
+                    document.getElementById("h3-"+i).innerHTML=(data.items[0].snippet.title);
+                    // h3.innerHTML=(data.items[0].snippet.title);
+                    document.getElementById("imgvi-"+i).src=data.items[0].snippet.thumbnails.medium.url;
+                    // alert(data.items[0].snippet.description);
+				// 	$("<h1></h1>").text(data.items[0].snippet.title).appendTo("#video-data-1");
+				// 	$("<p></p>").text(data.items[0].snippet.description).appendTo("#video-data-1");
+				// 	$("<li></li>").text("Published at: " + data.items[0].snippet.publishedAt).appendTo("#video-data-2");
+				// 	$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
+				// 	$("<li></li>").text("Favorite count: " + data.items[0].statistics.favoriteCount).appendTo("#video-data-2");
+				// 	$("<li></li>").text("Like count: " + data.items[0].statistics.likeCount).appendTo("#video-data-2");
+				// 	$("<li></li>").text("Dislike count: " + data.items[0].statistics.dislikeCount).appendTo("#video-data-2");
+				 }).fail(function(jqXHR, textStatus, errorThrown) {
+					$("<p style='color: #F00;'></p>").text(jqXHR.responseText || errorThrown).appendTo("#video-data-1");
+				});
+ 
+
+
+
+            
+  
+				
+
+            }
+          
+		});
+     
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+</script> 
+</body>
+</html>

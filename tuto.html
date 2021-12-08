@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/tutorials.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet" />
+    <script src="./js/Script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+   
+        <div class="navbarx" id="navbar23">
+            <div class="navleft">
+                <img class="logoleft" src="./images/mylogo.png" />
+            </div>
+            <div class="navright">
+                <!-- <img class="logoright" id="igbtn"onclick="myFunction()" src="./images/menu.png"/> -->
+                <ul class="navlist">
+                    <div class="sublist">
+                        <li><a href="./index.html"> Home</a></li>
+                        <li><a href="./codedemos.html">Codedemos </a></li>
+                        <li class="active"><a href="./tuto.html">Tutorials </a></li>
+                        <li><a href="./codedemos.html">Contact us</a></li>
+                    </div>
+                </ul>
+                <ul class="navlist1">
+                    <div class="sublist2" id="navli">
+                        <li ><a href="./index.html"> Home</a></li>
+                        <li><a href="./codedemos.html">Codedemos </a></li>
+                        <li class="active"><a href="./tuto.html">Tutorials </a></li>
+                        <li><a href="./codedemos.html">Contact us</a></li>
+                    </div>
+                </ul>
+                <div class="sublist1">
+                    <img class="logoright" id="igbtn" onclick="myFunction()" src="./images/menu.png" />
+                    <!-- <form class="" action="action_page.php">
+                        <input type="text" placeholder="Search.." name="search" />
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form> -->
+                </div>
+            </div>
+
+            <img class="logoright" id="igbtn" onclick="myFunction()" src="./images/menu.png" />
+        </div>
+        <div class="wrapper-t">
+          
+                    <div class="head-tuto">
+                        <h1>Tutorials</h1>
+                        
+    </div>
+   
+
+        <div class="cardsec-t">
+
+            <a href="./tutolistpage.html">  <div class="longcard"  id="0" onclick="sendv(this.id)">
+                <div class="imgpart">
+                    <img src="/images/html.png" alt="">
+                    <h1>HTML</h1>
+                </div>
+                <div class="textpart">
+                    <button class="btn1">explore more</button>
+                </div>
+
+            </div></a>
+            <a href="./tutolistpage.html">   <div class="longcard" id="1" onclick="sendv(this.id)">
+                <div class="imgpart">
+                    <img src="/images/css.png" alt="">
+                    <h1>CSS</h1>
+                </div>
+                <div class="textpart">
+                    <button class="btn1">explore more</button>
+                </div>
+            </div></a>
+            <div class="longcard" id="2" onclick="sendv(this.id)">
+                <div class="imgpart">
+                    <img src="/images/js.png" alt="">
+                    <h1>javascript</h1>
+                </div>
+                <div class="textpart">
+                    <button class="btn1">explore more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        function sendv(cid) {
+       
+       localStorage.setItem("number1", cid);
+
+   }
+    </script>
+</body>
+</html>
