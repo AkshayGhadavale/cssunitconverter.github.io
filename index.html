@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet" />
+ 
+
+<link href='aos.css' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -31,7 +34,7 @@
                         <li class="active"><a href="./index.html"> Home</a></li>
                         <li><a href="./codedemos.html">Codedemos </a></li>
                         <li><a href="./tuto.html">Tutorials </a></li>
-                        <li><a href="./codedemos.html">Contact us</a></li>
+                        <!-- <li><a href="./codedemos.html">Contact us</a></li> -->
                     </div>
                 </ul>
                 <ul class="navlist1">
@@ -39,7 +42,7 @@
                         <li class="active"><a href="./index.html"> Home</a></li>
                         <li><a href="./codedemos.html">Codedemos </a></li>
                         <li><a href="./tuto.html">Tutorials </a></li>
-                        <li><a href="./codedemos.html">Contact us</a></li>
+                        <!-- <li><a href="./codedemos.html">Contact us</a></li> -->
                     </div>
                 </ul>
                 <div class="sublist1">
@@ -50,8 +53,7 @@
                     </form> -->
                 </div>
             </div>
-
-            <img class="logoright" id="igbtn" onclick="myFunction()" src="./images/menu.png" />
+ <img class="logoright" id="igbtn" onclick="myFunction()" src="./images/menu.png" /> 
         </div>
 
         <div class="main-container">
@@ -63,7 +65,7 @@
                     </p>
                     <div class="pixelgp">
                         <label for="pixel1">Pixel</label>
-                        <input type="tel" name="" id="px1" onkeyup="return isNumber(event)" />
+                        <input type="tel" name="" id="px1" placeholder="Pixel" onkeyup="return isNumber(event)" />
                     </div>
                 </div>
             </div>
@@ -108,7 +110,7 @@
             </div>
         </div>
 
-        <div class="top-container" id="topcon">
+        <!-- <div class="top-container" id="topcon">
             <div class="sub-container">
                 <div class="card">
                     <div class="front-card">
@@ -130,16 +132,40 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> -->
+  
     <!-- <div class="footer"></div> -->
 
+    <div class="portpo" >
+        <div class="leftp">
+            
+            <div data-aos="zoom-in"  class="dpimg">
+             <!-- <img src="./images/IMG_8738~2.jpg" alt=""> 
+             --> </div> 
+        </div>
+        <div class="rightp">
+            <div data-aos="fade-left" class="haedername">
+            <h1>Akshay Ghadavale</h1>
+        </div>
+        <div class="skills">
+            <h1 data-aos="zoom-in">Skills</h1>
+            <div data-aos="fade-up-left" class="skil" id="htmlb"><h2>html</h1><div class="bar"><h3>90%</h3></div></div>
+            <div data-aos="fade-up-right"class="skil" id="cssb"><h2>css</h1><div class="bar"><h3>70%</h3></div></div>
+            <div data-aos="fade-up-left"class="skil" id="javascriptb"><h2>javascript</h1><div class="bar"><h3>40%</h3></div></div>
+            <div data-aos="fade-up-right" class="skil" id="Csharpb"><h2>C#</h1><div class="bar"><h3>60%</h3></div></div>
+
+        </div>
+        </div>
+
+    </div>
+
+</div>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js">
-        AOS.init({
-            duration: 1200,
-        })
+
     </script>
-    <script src="./js/Script.js"></script>
+    <script src="./js/Script.js">
+       
+    </script>
 </body>
 
 </html>
