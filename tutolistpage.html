@@ -7,183 +7,12 @@
     <title>Document</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="/css/style.css">
+    
+<link rel="stylesheet" href="/css/tutolistpage.css">
+    
 </head>
 <style>
-   @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
-    .wrapper-tlist{
-        background: black;
-        width: 100%;
-        height: 100px;
-       
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        
-    }
-    .wrapper-tlist  h1{
-        color :blanchedalmond;
-        font-family: "Caveat Brush";
-}
-    
-    .btn1 {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 10%;
-  }
-
-  #hindibtn{
-    background: rgb(0, 0, 0); 
-    color: white; 
-    border: 2px solid #008CBA;
-  }
-  
-  #englishbtn{
-    background: rgb(0, 0, 0); 
-    color: white; 
-    border: 2px solid #008CBA;
-  }
-  
-  /* .btn1:hover {
-    background-color: #008CBA;
-    color: white;
-  } */
-  .btngroup{
-height: 100%;
-width: 20%;
-
-display: flex;
-justify-content: space-between;
-align-items: center;
-  }
-  .txtgroup{
-    height: 100%;
-width: 20%;
-
-display: flex;
-justify-content: center;
-align-items: center;
-  }
-  .videolist{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-     background-color: black;
-      height: 80vh;
-  }
-  .list-vi{
-      width: 30%;
-      height: 100%;
-      background-color: black;
-
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-  .video-sec{
-    width: 70%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  .vi1
-  {
-      margin-top: 30px;
-      margin-left: 20px;
-      width: 90%;
-      height: 150px;
-      align-self: center;
-      justify-self: center;
-    
-    
- /* border:1px solid white;  */
-border-radius: 16px; 
-
-/* max-width: 100%;
-min-height: 500px; */
-/* box-shadow: 0px 3px 5px -1px white,
-  0px 5px 8px 0px wheat,
-  0px 1px 14px 0px white; */
-
-    
-      display: flex;
-      
-  }
-  .vidsec{
-width: 40%;
-height: 100%;
-background-color: black;
-display: flex;
-justify-content: center;
-align-items: center;
-/* border-radius: 16px;  */
-/* background-color: blue; */
-  }
-   .videc #imgvi{
-      width: 60%;
-      height: 60%;
-      
-     
-  } 
- 
-
-  .imgch {
-      width: 60%;
-      height: 60%;
-      border-radius: 50%;
-     
-  } 
- 
-  .infosec{
-    width: 60%;
-height: 100%;
-
-display: flex;
-flex-direction: column;
-
-  }
-  .infosec .title
-  {
-      width: 100%;
-      height: 100%;
-  display: flex;
-  align-items: center;
-
    
-  }
-  .infosec .title h3{
-margin-top: 10px;
-  color: white;
-  margin-left: 10px;
-  font-family: 'Fuzzy Bubbles', cursive;
-  
-   
-  }
-  .infosec .other h4{
-
-
-margin-left: 10px;
-
- 
-}
-
- .infosec  .other
-  {  
-      width: 100%;
-      height: 40%;
-      display: flex;
-  align-items: center;
-   
-  }
   
 </style>
 <body>
@@ -198,16 +27,16 @@ margin-left: 10px;
                 <div class="sublist">
                     <li ><a href="/index.html"> Home</a></li>
                     <li><a href="./codedemos.html">Codedemos </a></li>
-                    <li class="active"><a href="./tutorials.html">Tutorials </a></li>
-                    <li><a href="./codedemos.html">Contact us</a></li>
+                    <li class="active"><a href="./tuto.html">Tutorials </a></li>
+                    <!-- <li><a href="./codedemos.html">Contact us</a></li> -->
                 </div>
             </ul>
             <ul class="navlist1">
                 <div class="sublist2" id="navli">
                     <li ><a href="./index.html"> Home</a></li>
                     <li><a href="./codedemos.html">Codedemos </a></li>
-                    <li ><a href="./tutorials.html">Tutorials </a></li>
-                    <li><a href="./codedemos.html">Contact us</a></li>
+                    <li ><a href="/tuto.html">Tutorials </a></li>
+                    <!-- <li><a href="./codedemos.html">Contact us</a></li> -->
                 </div>-
             </ul>
             <div class="sublist1">
@@ -219,7 +48,7 @@ margin-left: 10px;
             </div>
         </div>
 
-        <img class="logoright" id="igbtn" onclick="myFunction()" src="./images/menu.png" />
+        <!-- <img class="logoright" id="igbtn" onclick="myFunction()" src="/images/cross.png" /> -->
     </div>
 
 <div class="wrapper-tlist">
@@ -253,15 +82,16 @@ margin-left: 10px;
         </div>  -->
         </div>
     <div class="video-sec">
-     <iframe id="bigscreen"width="1000" height="500" src="https://www.youtube.com/embed/gvyUuxdRdR4"> </iframe>
+     <iframe id="bigscreen" src="https://www.youtube.com/embed/gvyUuxdRdR4"> </iframe>
     </div>
     
     
     
 </div>
-
+<script src="./js/Script.js"> </script>
  <script>
   
+
 
 
 
@@ -284,6 +114,7 @@ if (background == "rgb(0, 0, 0)") {
 }
 
 }
+
 
 
 function colorchange1() {

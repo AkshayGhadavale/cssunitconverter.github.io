@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Schoolbell&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Finger+Paint");
+
 * {
     margin: 0;
     padding: 0;
-  
+  /* border:1px solid red; */
 }
 
 .wrapper {
@@ -55,6 +57,7 @@
     width: 80%;
     height: 50px;
     display: flex;
+   
   
     /* border:2px solid green; */
 }
@@ -80,9 +83,12 @@
 }
 
 .navlist {
+
     display: flex;
-    justify-content: flex-start;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
+width:90% ;
+align-content: center;
     color: antiquewhite;
     list-style: none;
     margin-left: 2vw;
@@ -94,7 +100,7 @@
 }
 
 .navlist li:hover {
-    transform: translateY(-10px);
+scale: 1.2;
     transition: ease;
 }
 
@@ -131,9 +137,12 @@ li.active a {
 }
 
 .sublist {
+  
     /* border: 2px solid red; */
-    width: 70%;
+    width: 60%;
+    height: 100%;
     display: flex;
+    margin: 130px;
     margin-right: 27vw;
     flex-direction: row;
 }
@@ -251,8 +260,9 @@ li.active a {
     align-content: flex-start;
     margin-top: 0px;
     height: 60%;
-    border-bottom-right-radius: 90%;
-    border-bottom-left-radius: 90%;
+    box-shadow: 0 0 12px 10px black;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
 }
 
 .first-container input[type="tel"] {
@@ -377,17 +387,233 @@ li.active a {
 }
 
 
+.portpo{
+    width: 100%;
+    height: 100vh;
+    background: rgb(36, 34, 34); 
+    display: flex;
+    box-shadow: 0 0 12px 10px black;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+
+}
+
+.leftp{
+    box-shadow: 0 -25px 2px 4px black;
+    border-top-left-radius: 50%;
+width: 40%;
+height: 80%;
+
+background: rgb(36, 34, 34); ; 
+display: flex;
+justify-content: center;
+align-items: flex-end;
+
+
+}
+ .dpimg{
+    width: 70%;
+    height: 90%;
+    background-image: url(/images/AGCARTOON-net\ one.png);
+      /* background-image: url(/images/whitebg.jpg);  */
+    background-size: cover; 
+
+    border-radius: 50%;
+    /* width: 200px;
+    height: 200px; */
+    /* border-left: solid white 5px;
+    border-right: solid white 5px;
+        border-right: solid white 5px;
+    border-top: none; */
+    /* you need to match the shadow color to your background or image border for the desired effect*/
+    box-shadow: 0 0 12px 10px black ; 
+    transform: perspective(1000px);
+    transform: preserve-3d;
+  
+
+    transition: all 180ms ease-out;
+}
+
+
+
+
+.dpimg:hover
+{ 
+    background-image: url(/images/IMG_8738~2.jpg);
+    background-size: cover; 
+    
+    transform: rotateY(180deg);
+  
+}
+
+.leftp img {
+ 
+    background-size: cover;
+    /* width: 100%;
+    height: 100%; */
+    
+} 
+
+.rightp{
+    /* box-shadow: 0 0 12px 10px rgb(36, 34, 34); ; */
+ border-bottom-right-radius: 50%;
+    width: 60%;
+    height: 80%;
+  
+
+    background: rgb(36, 34, 34); ; 
+    display: flex;
+    flex-direction: column;
+ 
+    
+    }
+    .haedername{
+        width: 100%;
+        height: 30%;
+  
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .skills{
+        width: 100%;
+        height: 70%;
+       
+    }
+
+    .skills h1 {
+        color: #fff;
+        font: 3vw/10vh "Finger Paint";
+ 
+        color: #fff;
+      height: 20%;
+        text-shadow: 0 
+    }
+    
+    .haedername h1{
+        color: #fff;
+        font: 5vw/20vh "Finger Paint";
+ 
+        color: #fff;
+        text-align: center;
+        text-shadow: 0 0 5px darkcyan, 0 0 10px darkcyan, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+ 
+    }
+
+.skil{
+ 
+    width:100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.bar{
+    width: 60%;
+    height:50% ;
+    display: flex;
+    justify-content: flex-end;
+    border:5px solid black ;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius:50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius:50px; 
+  
+}
+.skil h2 {
+    height: 50%;
+    color:#fff;
+    font: 2vw/5vh "Finger Paint";
+ margin-bottom: 10px;
+    color: #fff;
+}
+.bar h3{
+    color:#000;
+    margin-right: 10px;
+    font-family: "Caveat Brush", cursive;
+    /* font: 1.5vw/3vh "Finger Paint"; */
+    text-shadow: -1px 1px 0 #fff,
+                          1px 1px 0 #fff,
+                         1px -1px 0 #fff,
+                        -1px -1px 0 #fff;
+}
+
+#htmlb h2{
+
+    color: orange;
+}
+#cssb h2{
+    color: rgb(65, 126, 240);
+}
+#javascriptb h2 {
+    color:yellow;
+}
+#Csharpb h2{
+    color:rgb(211, 18, 218);
+}
+
+
+#htmlb .bar{
+
+    width: 80%;
+    height:30% ;
+    
+    background-color: orange;
+    
+  
+  
+}
+#cssb .bar{
+    background-color: rgb(65, 126, 240);
+    width: 60%;
+    height:30% ;
+}
+#javascriptb .bar {
+    background-color:yellow;
+    width: 40%;
+    height:30% ;
+}
+#Csharpb .bar{
+    background-color:rgb(211, 18, 218);
+    width: 50%;
+    height:30% ;
+}
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*mobiiile*********************************************************************************************************************************************/
 
 
 /*for mobile */
 
 @media only screen and (max-width: 640px) and (min-width: 360px) {
+    *{
+       
+        overflow-x: hidden;
+    }
     .wrapper {
         width: 100%;
-        height: 250vh;
+        height: 300vh;
         /* background-color: hsl(145, 42%, 45%); */
-        background-color: white;
+        background-color: black;
         position: absolute;
         top: 0px;
         z-index: 0;
@@ -397,7 +623,7 @@ li.active a {
     }
     .main-container {
         width: 100%;
-        height: 60%;
+        height: 50%;
         display: flex;
         position: relative;
         background-color: black;
@@ -408,6 +634,7 @@ li.active a {
         -o-transition: width 1s ease-in-out;
         transition: width 1s ease-in-out;
         height: 50px;
+      
     }
     .navbarx.h250 {
         -moz-transition: width 1s ease-in-out;
@@ -664,6 +891,12 @@ box-shadow: 0 8px 6px -6px black; */
     .card .front-end {
         visibility: hidden;
     }
+ 
+    .portpo{
+        width: 100%;
+        height: 100vh;
+        background-color: #a150a1;
+    }
     .footer {
         width: 100%;
         height: 10%;
@@ -674,6 +907,222 @@ box-shadow: 0 8px 6px -6px black; */
         left: 0;
         right: 0;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .portpo{
+        width: 100%;
+        height:40%;
+        background: black; 
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 12px 10px black;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+    
+    }
+    
+    .leftp{
+        box-shadow: 0 0 12px 10px black;
+        /* border-top-left-radius: 50%; */
+    width: 100%;
+    height: 40%;
+    
+    background: transparent; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    
+    }
+     .dpimg{
+        width: 70%;
+        height: 90%;
+        background-image: url(/images/AGCARTOON-net\ one.png);
+          /* background-image: url(/images/whitebg.jpg);  */
+        background-size: cover; 
+    
+        border-radius: 50%;
+        /* width: 200px;
+        height: 200px; */
+        /* border-left: solid white 5px;
+        border-right: solid white 5px;
+            border-right: solid white 5px;
+        border-top: none; */
+        /* you need to match the shadow color to your background or image border for the desired effect*/
+        box-shadow: 0 0 12px 10px white ; 
+        transform: perspective(1000px);
+        transform: preserve-3d;
+      
+    
+        transition: all 180ms ease-out;
+    }
+    
+    
+    
+    
+    .dpimg:hover
+    { 
+        background-image: url(/images/IMG_8738~2.jpg);
+        background-size: cover; 
+        
+        transform: rotateY(180deg);
+      
+    }
+    
+    .leftp img {
+     
+        background-size: cover;
+        /* width: 100%;
+        height: 100%; */
+        
+    } 
+    
+    .rightp{
+        box-shadow: 0 0 12px 10px black;
+     border-top-right-radius: 0%;
+        width: 100%;
+        height: 70%;
+         background: black; 
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+     
+        
+        }
+        .haedername{
+            width: 100%;
+            height: 30%;
+      
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .skills{
+            width: 100%;
+            height: 70%;
+            margin-top: 10px;
+            margin-left: 10px;
+           
+        }
+    
+        .skills h1 {
+            color: #fff;
+            font: 7vw/4vh "Finger Paint";
+     z-index: 99;
+            color: #fff;
+          height: 10%;
+            text-shadow: 0 
+        }
+        
+        .haedername h1{
+            color: #fff;
+            font: 9vw/20vh "Finger Paint";
+     
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 0 5px darkcyan, 0 0 10px darkcyan, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+     
+        }
+    
+    .skil{
+     
+        width:100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+    }
+    .bar{
+        width: 60%;
+        height:50% ;
+        display: flex;
+        justify-content: flex-end;
+        border:5px solid black ;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius:50px;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius:50px; 
+      
+    }
+    .skil h2 {
+        height: 50%;
+        color:#fff;
+        font: 6vw/5vh "Finger Paint";
+     margin-bottom: 0px;
+        color: #fff;
+    }
+    .bar h3{
+        color:#000;
+        margin-right: 10px;
+        font-family: "Caveat Brush", cursive;
+        /* font: 1.5vw/3vh "Finger Paint"; */
+        text-shadow: -1px 1px 0 #fff,
+                              1px 1px 0 #fff,
+                             1px -1px 0 #fff,
+                            -1px -1px 0 #fff;
+    }
+    
+    #htmlb h2{
+    
+        color: orange;
+    }
+    #cssb h2{
+        color: rgb(65, 126, 240);
+    }
+    #javascriptb h2 {
+        color:yellow;
+    }
+    #Csharpb h2{
+        color:rgb(211, 18, 218);
+    }
+    
+    
+    #htmlb .bar{
+    
+        width: 80%;
+        height:30% ;
+        
+        background-color: orange;
+        
+      
+      
+    }
+    #cssb .bar{
+        background-color: rgb(65, 126, 240);
+        width: 60%;
+        height:30% ;
+    }
+    #javascriptb .bar {
+        background-color:yellow;
+        width: 40%;
+        height:30% ;
+    }
+    #Csharpb .bar{
+        background-color:rgb(211, 18, 218);
+        width: 50%;
+        height:30% ;
+    }
+    
+
+
+
+
+
 }
 
 

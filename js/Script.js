@@ -1,5 +1,8 @@
 
-
+AOS.init({
+    duration: 1800,
+  })
+  
 
 
   function myFu() {
@@ -14,25 +17,28 @@
  if (x.style.height === "50px") {
 
    
-  
-    
+ 
+    document.getElementById("igbtn").src="./images/cross.png";
+document.getElementById("igbtn").style.height="60px";
       x.style.height = "300px";
 //   c.style.display="flex";
       c.style.top="50px";
   
       y.style.top="1100px";
-      var c =document.getElementById("igbtn").src="./images/cross.png";
-      var c =document.getElementById("igbtn").style.height="60px";
+   
+    //   var c = document.getElementById("igbtn").src="./images/cross.png";
+    //   var c = document.getElementById("igbtn").style.height="60px";
      
     } else {
        
-       
+        document.getElementById("igbtn").src="./images/menu.png";
+        document.getElementById("igbtn").style.height="50px";
        x.style.height = "50px";
        c.style.top="-250px";
     // c.style.display="none";
     y.style.top="900px";
-       var c =document.getElementById("igbtn").src="./images/menu.png";
-       var c =document.getElementById("igbtn").style.height="50px";
+    //    var c = document.getElementById("igbtn").src="./images/menu.png";
+    //    var c = document.getElementById("igbtn").style.height="50px";
 
     }
   
