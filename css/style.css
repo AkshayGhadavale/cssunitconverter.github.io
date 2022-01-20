@@ -414,7 +414,7 @@ align-items: flex-end;
  .dpimg{
     width: 70%;
     height: 90%;
-    background-image: url(/images/AGCARTOON-net\ one.png);
+    background-image: url(./images/AGCARTOON-net\ one.png);
       /* background-image: url(/images/whitebg.jpg);  */
     background-size: cover; 
 
